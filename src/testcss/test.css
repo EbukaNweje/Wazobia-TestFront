@@ -10,7 +10,7 @@
     padding-left: 20px;
     justify-content: space-between;
     margin-bottom: 3%;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.651);
     height: max-content;
     text-align: center;
 }
