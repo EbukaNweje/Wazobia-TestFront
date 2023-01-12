@@ -8,6 +8,8 @@ import {
   Route
 } from "react-router-dom";
 import Dashboard from './components/Dashboard';
+import Verify from './components/Verify';
+
 
 const App = () => {
   const router =  createBrowserRouter(
@@ -16,6 +18,7 @@ const App = () => {
         <Route path='/' element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard/:userid" element={<Dashboard />} />
+        <Route path="/verify/:userid" element={<Verify />} />
       </Route>
     )
   )
