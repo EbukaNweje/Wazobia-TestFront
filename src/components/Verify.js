@@ -1,21 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
-import {GrStatusGood} from 'react-icons/gr'
+import {GoVerified} from 'react-icons/go'
 import {BiRightArrow} from 'react-icons/bi'
 
 const Verify = () => {
   return (
    <Maincontainer>
         <Card>
-            <GrStatusGood style={{color: "green", fontSize: "30px"}}/>
+            <GoVerified style={{color: "green", fontSize: "40px"}}/>
             <Text>Your email address has been verified.</Text>
-            <Back>Go to Dashboard <BiRightArrow/></Back>
+            <Back>Go to Dashboard <BiRightArrow style={{color: "blue", fontSize: "15px"}} /></Back>
         </Card>
    </Maincontainer>
   )
 }
 
 export default Verify
+const Back = styled.div`
+  font-size: 15px;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+`
 const Text = styled.div``
 const Card = styled.div`
     display: flex;
